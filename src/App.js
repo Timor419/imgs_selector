@@ -5,17 +5,17 @@ import ImageSelector from "./ImageSelector";
 const IMAGES = [
     {
         id: '1',
-        name: 'foo',
+        name: '图一',
         url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
     },
     {
         id: '2',
-        name: 'foo',
+        name: '图二',
         url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
     },
     {
         id: '3',
-        name: 'foo',
+        name: '图三',
         url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
     },
 ];
