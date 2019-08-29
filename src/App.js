@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ImageSelector from "./ImageSelector";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const IMAGES = [
+    {
+        id: '1',
+        name: 'foo',
+        url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
+    },
+    {
+        id: '2',
+        name: 'foo',
+        url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
+    },
+    {
+        id: '3',
+        name: 'foo',
+        url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
+    },
+];
+
+export default class App extends React.Component {
+
+    onImageSelectChange = values => {
+        console.log("onChange", values.map(item => item.checked).join(", "));
+    };
+
+    render() {
+        const value = [IMAGES[0], IMAGES[2]];
+        return (
+            <div>
+                <ImageSelector images={IMAGES} value={value} onImageSelectChange={this.onImageSelectChange}/>
+            </div>
+        )
+    }
 }
-
-export default App;
