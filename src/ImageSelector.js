@@ -5,6 +5,7 @@ import './ImageSelector.css';
 export default class ImageSelector extends React.Component {
 
     onImageSelectChange = null;
+
     state = {
         images: [],
         num: 2
