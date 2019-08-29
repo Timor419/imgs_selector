@@ -1,0 +1,27 @@
+.checkAll {
+    margin-top: 10px;
+}
+
+/* 居中 */
+.ver-center {
+    display: flex;
+    flex-flow: column nowrap; /*主轴为垂直方向*/
+    justify-content: center; /*主轴线上居中*/
+    align-items: center; /*交叉轴线上居中*/
+}
+
+.cell {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.name {
+    margin-top: 5px;
+}

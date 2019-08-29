@@ -21,7 +21,6 @@ const IMAGES = [
 ];
 
 export default class App extends React.Component {
-
     onImageSelectChange = values => {
         console.log("onChange", values.map(item => item.checked).join(", "));
     };
